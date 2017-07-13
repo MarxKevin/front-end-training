@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Animated fullscreen design</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+	<header>
+		<h1>Logo</h1>
+	</header>
+	<h2>Make your choice</h2>
+	
+	<div id="wrapper">		<!--wrapper contient tous mes éléments animables -->
+		<!--Section écouteur (gauche)-->
+		<div id="slide_ecouteur">	<!--Div permettant le biseautage de l'élément-->
+			<div class="fond_ecouteur">	<!--Div contenant l'image de fond et permet de remettre l'image biseauté droite-->
+				<div class="back_gauche">Back</div>
+				<form method="POST">
+					<label>Get it!</label>
+					<input type="text" placeholder="Firstname"/>
+					<input type="text" placeholder="Lastname"/>
+					<input type="text" placeholder="E-mail"/>
+					<input type="submit" value="Send"/>
+				</form>
+			</div>
+		</div>
+		<!--Section headset (droite)-->
+		<div id="slide_headset">	<!--Div permettant le biseautage de l'élément-->
+			<div class="fond_headset">	<!--Div contenant l'image de fond et permet de remettre l'image biseauté droite-->
+				<div class="back_droite">Back</div>
+				<form method="POST">
+					<label>Get it!</label>
+					<input type="text" placeholder="Firstname"/>
+					<input type="text" placeholder="Lastname"/>
+					<input type="text" placeholder="E-mail"/>
+					<input type="submit" value="Send"/>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/move_script.js"></script>
+</body>
+</html>
